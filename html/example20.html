@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function validateform(){
+      var u=document.myForm.user.value;
+      var p=document.myForm.pwd.value;
+      if(u==null || u==" "){
+        alert("name can't be blanck");
+        return false;
+      }
+        else if(p.length<6){
+        alert("Password must be at least 6 characters long.");
+        return false;  }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="return validateform()">
+      <label>enter name:</label>
+      <input type="text" name="user"><br><br>
+      <label>password:</label>
+      <input type="password" name="pwd"><br><br>
+      <input type="submit" value="submit">
+
+    </form>
+  </body>
+</html>

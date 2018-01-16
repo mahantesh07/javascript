@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function validate() {
+        var msg;
+        if(document.myForm.userPass.value.length>5){
+          msg="goood";
+        }
+        else {
+          msg="pooor";
+        }
+         document.getElementById('myLocation').innerText=msg;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm">
+      <input type="text" name="userPass" value="" onkeyup="validate()">
+      Strength:<span id="myLocation">nostrength</span>
+    </form>
+  </body>
+</html>

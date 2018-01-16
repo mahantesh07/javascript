@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function msg(){
+        alert("hello javascript");
+      }
+      function msg1(){
+        var v=confirm("are you sure??");
+        if(v==true){
+          alert("ok");
+        }
+        else{
+          alert("cancel");
+        }
+      }
+      function msg2(){
+        var v= prompt("Who are you?");
+        alert("I am "+v);
+      }
+    </script>
+  </head>
+  <body>
+<input type="button" value="click" onclick="msg()">
+<input type="button" value="click1" onclick="msg1()">
+<input type="button" value="click2" onclick="msg2()">
+  </body>
+</html>
